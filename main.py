@@ -6,6 +6,8 @@ import os
 import gi
 from threading import Timer
 
+gi.require_version('Gdk', '3.0') # https://github.com/Ulauncher/Ulauncher/issues/703
+
 # pylint: disable=import-error
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
